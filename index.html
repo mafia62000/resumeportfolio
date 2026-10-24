@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyanshu Raj — AI Automation · Project Management · Business Operations · Full-Stack</title>
+<meta name="description" content="Priyanshu Raj — technology-driven professional blending full-stack development, AI-powered automation and hands-on business operations. Based in Gorakhpur, India.">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:title" content="Priyanshu Raj — Résumé & Portfolio">
+<meta property="og:description" content="AI Automation | Project Management | Business Operations | Full-Stack Development">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  // apply saved theme before paint
+  (function(){try{var t=localStorage.getItem('pr-theme');if(!t){t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<header class="topbar" id="top">
+  <nav class="nav" aria-label="Primary">
+    <a href="#hero" class="brand" aria-label="Priyanshu Raj, back to top">
+      <span class="brand-mark" aria-hidden="true">PR</span><span class="brand-name">Priyanshu Raj</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">What I do</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn kbd-btn" id="paletteBtn" type="button" aria-label="Open command palette (Ctrl+K)" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 18a7.5 7.5 0 1 1 5.3-2.2L21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch to light theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Pipeline rail: the site reads like a project moving from brief to launch -->
+<aside class="rail" aria-label="Page stages">
+  <ol>
+    <li><a href="#hero" data-stage="hero"><i></i><span>Start</span></a></li>
+    <li><a href="#about" data-stage="about"><i></i><span>Brief</span></a></li>
+    <li><a href="#services" data-stage="services"><i></i><span>Scope</span></a></li>
+    <li><a href="#experience" data-stage="experience"><i></i><span>Track record</span></a></li>
+    <li><a href="#projects" data-stage="projects"><i></i><span>Builds</span></a></li>
+    <li><a href="#skills" data-stage="skills"><i></i><span>Toolkit</span></a></li>
+    <li><a href="#education" data-stage="education"><i></i><span>Foundations</span></a></li>
+    <li><a href="#contact" data-stage="contact"><i></i><span>Kickoff</span></a></li>
+  </ol>
+</aside>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <canvas id="flow" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Gorakhpur, India · open to remote</p>
+      <h1 id="hero-title" class="hero-name">
+        <span class="line">Priyanshu</span>
+        <span class="line accent">Raj<span class="caret" aria-hidden="true">_</span></span>
+      </h1>
+      <p class="headline">
+        <span class="tag t1">AI Automation</span><span class="sep" aria-hidden="true">|</span>
+        <span class="tag t2">Project Management</span><span class="sep" aria-hidden="true">|</span>
+        <span class="tag t3">Business Operations</span><span class="sep" aria-hidden="true">|</span>
+        <span class="tag t4">Full-Stack Development</span>
+      </p>
+      <p class="lede">I build the tech <em>and</em> run the operations behind it — from code and AI workflows to vendors, teams and budgets.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="resume.pdf" download="Priyanshu-Raj-Resume.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download resume
+        </a>
+        <a class="btn ghost" href="#projects">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- Mini terminal -->
+    <div class="terminal" id="terminal" role="region" aria-label="Interactive terminal. Type help and press Enter.">
+      <div class="term-bar">
+        <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="term-title">priyanshu@portfolio: ~</span>
+      </div>
+      <div class="term-body" id="termBody" aria-live="polite"></div>
+      <form class="term-input" id="termForm" autocomplete="off">
+        <label for="termIn" class="prompt">$</label>
+        <input id="termIn" type="text" spellcheck="false" autocapitalize="off" placeholder="type help…" aria-label="Terminal command">
+      </form>
+      <div class="term-chips" aria-label="Quick commands">
+        <button type="button" data-cmd="whoami">whoami</button>
+        <button type="button" data-cmd="experience">experience</button>
+        <button type="button" data-cmd="projects">projects</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="contact">contact</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap facts" role="list" aria-label="Quick facts">
+    <div class="fact" role="listitem"><b data-count="7">7</b><span>roles across startups, agencies &amp; enterprise</span></div>
+    <div class="fact" role="listitem"><b data-count="40" data-suffix="%">40%</b><span>faster website load speed at Koda</span></div>
+    <div class="fact" role="listitem"><b>1</b><span>business founded &amp; run — WeFit Gym</span></div>
+    <div class="fact" role="listitem"><b>B.Tech</b><span>Information Technology, KIET</span></div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="stage-no">01 · Brief</span>
+      <h2 id="about-title">Engineer by training. Operator by practice.</h2>
+    </header>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        Technology-driven professional with a background in <mark>full-stack development</mark>, <mark>AI-powered automation</mark>, and <mark>hands-on business management</mark>.
+        I combine technical expertise with practical experience in building and managing a business, streamlining operations, and implementing systems to improve efficiency.
+        I'm skilled in cross-functional coordination, problem-solving, process optimization, and translating business requirements into scalable technology-driven solutions —
+        a unique blend of technical understanding, ownership, and real-world operational experience.
+      </p>
+      <ul class="venn reveal" aria-label="Where my strengths overlap">
+        <li class="v v1"><span>Tech</span></li>
+        <li class="v v2"><span>AI</span></li>
+        <li class="v v3"><span>Ops</span></li>
+        <li class="v-core" aria-label="The overlap: me">me</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section alt" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="stage-no">02 · Scope</span>
+      <h2 id="services-title">What I can do for you</h2>
+      <p class="sub">Pick what you need — I bridge the gap between building it and running it.</p>
+    </header>
+
+    <div class="mode-switch reveal" role="tablist" aria-label="Choose a focus">
+      <button role="tab" id="tab-build" aria-controls="panel-build" aria-selected="true" tabindex="0" data-mode="build">⚙︎ Build</button>
+      <button role="tab" id="tab-automate" aria-controls="panel-automate" aria-selected="false" tabindex="-1" data-mode="automate">✦ Automate</button>
+      <button role="tab" id="tab-manage" aria-controls="panel-manage" aria-selected="false" tabindex="-1" data-mode="manage">◎ Manage</button>
+      <button role="tab" id="tab-operate" aria-controls="panel-operate" aria-selected="false" tabindex="-1" data-mode="operate">▣ Operate</button>
+      <span class="mode-pill" aria-hidden="true"></span>
+    </div>
+
+    <div class="mode-panels">
+      <div class="mode-panel" role="tabpanel" id="panel-build" aria-labelledby="tab-build">
+        <div class="svc-card"><h3>Websites &amp; e-commerce that perform</h3><p>End-to-end builds across front-end and back-end, from concept to production — WordPress, WooCommerce, Shopify, Wix, headless CMS (Strapi, Storyblok) and custom code.</p></div>
+        <div class="svc-card"><h3>Custom themes &amp; plugins</h3><p>Functionality tailored to client and campaign requirements, built to be responsive and scalable.</p></div>
+        <div class="svc-card"><h3>Speed &amp; SEO</h3><p>Performance tuning for faster load times and better search visibility — including a 40% load-speed improvement at Koda.</p></div>
+      </div>
+      <div class="mode-panel" role="tabpanel" id="panel-automate" aria-labelledby="tab-automate" hidden>
+        <div class="svc-card"><h3>AI-powered solutions</h3><p>Scalable solutions built with AI-assisted development and automation workflows, for national and international clients.</p></div>
+        <div class="svc-card"><h3>Multi-model AI integrations</h3><p>Hands-on with ChatGPT, Claude and Perplexity — e.g. a multi-model content summarizer for CMS platforms and blogs.</p></div>
+        <div class="svc-card"><h3>Prompt engineering &amp; AI tooling</h3><p>Claude Code, ChatGPT and other AI tools put to work on real delivery, not just demos.</p></div>
+      </div>
+      <div class="mode-panel" role="tabpanel" id="panel-manage" aria-labelledby="tab-manage" hidden>
+        <div class="svc-card"><h3>Cross-functional delivery</h3><p>Coordinating design, development and client teams to ship on time, resolve technical blockers and improve execution.</p></div>
+        <div class="svc-card"><h3>Requirements → solutions</h3><p>Translating business requirements into scalable, technology-driven solutions.</p></div>
+        <div class="svc-card"><h3>Tracking that works</h3><p>Jira, Trello, Google Workspace and Microsoft Office to keep work visible and moving.</p></div>
+      </div>
+      <div class="mode-panel" role="tabpanel" id="panel-operate" aria-labelledby="tab-operate" hidden>
+        <div class="svc-card"><h3>Business setup</h3><p>Project planning, vendor coordination, staffing, budgeting and operational setup — done first-hand as founder of WeFit Gym.</p></div>
+        <div class="svc-card"><h3>Standardized workflows</h3><p>Implementing standard processes and delegating routine operations so the business runs on systems.</p></div>
+        <div class="svc-card"><h3>Less founder dependence</h3><p>Structured, system-driven operations that reduce the need for daily personal presence.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience" aria-labelledby="exp-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="stage-no">03 · Track record</span>
+      <h2 id="exp-title">Experience</h2>
+      <p class="sub">From freelancing in college to founding a business. Newest first.</p>
+    </header>
+
+    <div class="timeline" id="timeline">
+      <div class="tl-line" aria-hidden="true"><span id="tlFill"></span></div>
+      <ol class="tl-list">
+        <li class="tl-item reveal" data-kind="ops">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">June 2026 — Present <span class="badge live">Now</span></p>
+            <h3>Founder &amp; Operations Manager</h3>
+            <p class="tl-org">WeFit Gym</p>
+            <ul>
+              <li>Founded and launched a fitness business, managing project planning, vendor coordination, staffing, budgeting, and operational setup.</li>
+              <li>Implemented standardized workflows and delegated routine operations to staff and family members.</li>
+              <li>Reduced dependence on daily personal presence by establishing more structured, system-driven operations.</li>
+            </ul>
+            <p class="chips"><span>Operations</span><span>Budgeting</span><span>Vendors</span><span>Staffing</span></p>
+          </article>
+        </li>
+        <li class="tl-item reveal" data-kind="lead">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">May 2025 — May 2026</p>
+            <h3>Web Team Lead</h3>
+            <p class="tl-org">Koda</p>
+            <ul>
+              <li>Collaborated with cross-functional design teams to deliver consistent brand experiences.</li>
+              <li>Developed scalable, AI-powered solutions for national and international clients using AI-assisted development and automation workflows.</li>
+              <li>Improved website load speed by <strong class="hl">40%</strong> and enhanced SEO performance across client projects.</li>
+            </ul>
+            <p class="chips"><span>Team lead</span><span>AI workflows</span><span>SEO</span></p>
+          </article>
+        </li>
+        <li class="tl-item reveal" data-kind="dev">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">March 2024 — December 2024</p>
+            <h3>Frontend Developer</h3>
+            <p class="tl-org">KaroStartup</p>
+            <ul>
+              <li>Engineered custom theme and plugin functionalities tailored to client and campaign requirements.</li>
+              <li>Managed end-to-end website development across front-end and back-end architecture, from concept through production deployment.</li>
+            </ul>
+            <p class="chips"><span>Themes</span><span>Plugins</span><span>Full-stack</span></p>
+          </article>
+        </li>
+        <li class="tl-item reveal" data-kind="dev">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">July 2023 — September 2023</p>
+            <h3>Web Developer</h3>
+            <p class="tl-org">TGO</p>
+            <ul>
+              <li>Developed high-performing e-commerce platforms using WooCommerce and Shopify for fitness influencers and personal brands.</li>
+              <li>Built custom themes and plugins for responsive, scalable, client-focused web solutions.</li>
+            </ul>
+            <p class="chips"><span>WooCommerce</span><span>Shopify</span></p>
+          </article>
+        </li>
+        <li class="tl-item reveal" data-kind="dev">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">January 2023 — July 2023</p>
+            <h3>Digital Solutions Specialist</h3>
+            <p class="tl-org">Branding Venture</p>
+            <ul>
+              <li>Designed and developed responsive websites using WordPress, Shopify, and HTML for clients across finance, retail, and marketing.</li>
+              <li>Optimized website performance for faster load times, scalability, and improved search engine visibility.</li>
+            </ul>
+            <p class="chips"><span>WordPress</span><span>Shopify</span><span>Performance</span></p>
+          </article>
+        </li>
+        <li class="tl-item reveal" data-kind="dev">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">May 2022 — December 2022</p>
+            <h3>Software Engineer</h3>
+            <p class="tl-org">Capgemini</p>
+            <ul>
+              <li>Completed an apprenticeship focused on software development, problem-solving, and building scalable solutions.</li>
+              <li>Collaborated with cross-functional teams during software development work.</li>
+            </ul>
+            <p class="chips"><span>Enterprise</span><span>Apprenticeship</span></p>
+          </article>
+        </li>
+        <li class="tl-item reveal" data-kind="dev">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <article class="tl-card">
+            <p class="tl-date">January 2019 — February 2021</p>
+            <h3>Freelancer</h3>
+            <p class="tl-org">Fiverr</p>
+            <ul>
+              <li>Developed websites and Android applications for startups and established businesses across diverse industries.</li>
+              <li>Delivered graphic design solutions alongside web and application development work.</li>
+            </ul>
+            <p class="chips"><span>Web</span><span>Android</span><span>Graphic design</span></p>
+          </article>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section alt" id="projects" aria-labelledby="proj-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="stage-no">04 · Builds</span>
+      <h2 id="proj-title">Projects &amp; portfolio</h2>
+      <p class="sub">Tap a card to flip it for the details.</p>
+    </header>
+
+    <div class="cards">
+      <article class="flip reveal" style="--c:var(--c1)">
+        <button class="flip-inner" type="button" aria-expanded="false" aria-label="AI Multi-Model Content Summarizer — show details">
+          <span class="face front">
+            <span class="card-ico" aria-hidden="true">✦</span>
+            <span class="card-kicker">AI · CMS</span>
+            <span class="card-title">AI Multi-Model Content Summarizer</span>
+            <span class="card-desc">An AI-powered platform for generating article summaries with multiple AI models, designed for CMS-based platforms and blogs.</span>
+            <span class="flip-hint">Details ↻</span>
+          </span>
+          <span class="face back">
+            <span class="card-title sm">What it does</span>
+            <span class="blist">
+              <span>Integrated ChatGPT, Claude, and Perplexity to support multi-model content summarization.</span>
+              <span>Real-time processing and customizable summary formats.</span>
+              <span>Designed for scalable, cross-platform deployment and integration with CMS-based platforms and blogs.</span>
+            </span>
+            <span class="flip-hint">Back ↺</span>
+          </span>
+        </button>
+      </article>
+
+      <article class="flip reveal" style="--c:var(--c2)">
+        <button class="flip-inner" type="button" aria-expanded="false" aria-label="E-Commerce Platform with AI Recommendations — show details">
+          <span class="face front">
+            <span class="card-ico" aria-hidden="true">🛒</span>
+            <span class="card-kicker">AI · E-commerce</span>
+            <span class="card-title">E-Commerce Platform with AI Recommendations</span>
+            <span class="card-desc">Combines product recommendations, payments, analytics, and inventory management to support more informed online retail operations.</span>
+            <span class="flip-hint">Details ↻</span>
+          </span>
+          <span class="face back">
+            <span class="card-title sm">What it does</span>
+            <span class="blist">
+              <span>Intelligent product recommendations.</span>
+              <span>Stripe and Razorpay payment processing.</span>
+              <span>Advanced admin analytics and real-time inventory management.</span>
+            </span>
+            <span class="flip-hint">Back ↺</span>
+          </span>
+        </button>
+      </article>
+
+      <article class="flip reveal" style="--c:var(--c3)">
+        <button class="flip-inner" type="button" aria-expanded="false" aria-label="Diligent Global — show details">
+          <span class="face front">
+            <span class="card-ico" aria-hidden="true">◆</span>
+            <span class="card-kicker">Enterprise · SAP consulting · Live site</span>
+            <span class="card-title">Diligent Global</span>
+            <span class="card-desc">Led website development and optimization for an enterprise technology consulting company specializing in SAP solutions, digital transformation, and IT services.</span>
+            <span class="flip-hint">Details ↻</span>
+          </span>
+          <span class="face back">
+            <span class="card-title sm">What I did</span>
+            <span class="blist">
+              <span>Improved performance and page-loading speed; enhanced responsive design, UX and SEO.</span>
+              <span>Coordinated development workflows and cross-functional teams for timely delivery and fewer blockers.</span>
+              <span>Presented offerings like SAP S/4HANA transformation, SAP FICO &amp; MM, cloud services and AI-driven automation.</span>
+              <span>Refined content structures, service landing pages and lead-generation funnels.</span>
+            </span>
+            <span class="flip-hint">Back ↺</span>
+          </span>
+        </button>
+        <a class="visit" href="https://diligentglobal.com" target="_blank" rel="noopener">Visit diligentglobal.com ↗</a>
+      </article>
+
+      <article class="flip reveal" style="--c:var(--c4)">
+        <button class="flip-inner" type="button" aria-expanded="false" aria-label="BBSampaark — show details">
+          <span class="face front">
+            <span class="card-ico" aria-hidden="true">▤</span>
+            <span class="card-kicker">Government-backed · High traffic · Live site</span>
+            <span class="card-title">BBSampaark</span>
+            <span class="card-desc">A scalable registration platform for a government-backed client, enabling thousands of students to register online simultaneously.</span>
+            <span class="flip-hint">Details ↻</span>
+          </span>
+          <span class="face back">
+            <span class="card-title sm">What I did</span>
+            <span class="blist">
+              <span>Built responsive user interfaces.</span>
+              <span>Integrated registration forms with backend APIs and database storage.</span>
+              <span>Implemented data validation and error handling for reliable submissions.</span>
+              <span>Focused on performance, data accuracy and a seamless UX during high-traffic campaigns.</span>
+            </span>
+            <span class="flip-hint">Back ↺</span>
+          </span>
+        </button>
+        <a class="visit" href="https://bbsampaark.in" target="_blank" rel="noopener">Visit bbsampaark.in ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="stage-no">05 · Toolkit</span>
+      <h2 id="skills-title">Skill explorer</h2>
+      <p class="sub">Filter by category, or search.</p>
+    </header>
+    <div class="skill-controls reveal">
+      <div class="filters" role="group" aria-label="Filter skills by category" id="skillFilters">
+        <button type="button" aria-pressed="true" data-f="all">All</button>
+        <button type="button" aria-pressed="false" data-f="dev">Dev</button>
+        <button type="button" aria-pressed="false" data-f="cms">CMS</button>
+        <button type="button" aria-pressed="false" data-f="ai">AI &amp; Automation</button>
+        <button type="button" aria-pressed="false" data-f="tools">Tools</button>
+        <button type="button" aria-pressed="false" data-f="mgmt">Management</button>
+      </div>
+      <label class="search">
+        <span class="visually-hidden">Search skills</span>
+        <input type="search" id="skillSearch" placeholder="Search e.g. Shopify">
+      </label>
+    </div>
+    <p class="skill-count" id="skillCount" aria-live="polite"></p>
+    <ul class="skill-cloud" id="skillCloud"></ul>
+  </div>
+</section>
+
+<!-- EDUCATION + CERTS -->
+<section class="section alt" id="education" aria-labelledby="edu-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="stage-no">06 · Foundations</span>
+      <h2 id="edu-title">Education &amp; certifications</h2>
+    </header>
+    <div class="edu-grid">
+      <div class="edu-col">
+        <h3 class="col-title">Education</h3>
+        <ol class="edu-list">
+          <li class="edu reveal"><span class="yr">2018 – 2022</span><b>Bachelor of Technology in Information Technology</b><span>KIET Group of Institution, Ghaziabad</span></li>
+          <li class="edu reveal"><span class="yr">2017 – 2018</span><b>Intermediate (ISC)</b><span>Little Flower School, Gorakhpur</span></li>
+          <li class="edu reveal"><span class="yr">2015 – 2016</span><b>High School (ICSE)</b><span>Little Flower School, Gorakhpur</span></li>
+        </ol>
+      </div>
+      <div class="edu-col">
+        <h3 class="col-title">Certifications &amp; achievements</h3>
+        <ul class="certs">
+          <li class="cert reveal"><span class="seal" aria-hidden="true">AI</span><b>Full stack generative and Agentic AI with python</b></li>
+          <li class="cert reveal"><span class="seal" aria-hidden="true">UX</span><b>Web Design for Everybody</b></li>
+          <li class="cert reveal"><span class="seal" aria-hidden="true">AN</span><b>The Complete Android N Development Course</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <header class="sec-head reveal center">
+      <span class="stage-no">07 · Kickoff</span>
+      <h2 id="contact-title">Let's build — and run — something great.</h2>
+      <p class="sub">Open to project management, delivery, operations and AI-automation roles.</p>
+    </header>
+    <div class="contact-grid reveal">
+      <div class="contact-card">
+        <span class="c-label">Email</span>
+        <a class="c-value" href="mailto:raj62000date@gmail.com">raj62000date@gmail.com</a>
+        <button class="btn small" type="button" id="copyEmail">Copy email</button>
+      </div>
+      <div class="contact-card">
+        <span class="c-label">LinkedIn</span>
+        <a class="c-value" href="https://www.linkedin.com/in/priyanshu-raj2" target="_blank" rel="noopener">linkedin.com/in/priyanshu-raj2</a>
+        <a class="btn small" href="https://www.linkedin.com/in/priyanshu-raj2" target="_blank" rel="noopener">Connect ↗</a>
+      </div>
+      <div class="contact-card">
+        <span class="c-label">Location</span>
+        <span class="c-value">Gorakhpur, India</span>
+        <a class="btn small primary" href="resume.pdf" download="Priyanshu-Raj-Resume.pdf">Download resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© <span id="yr">2026</span> Priyanshu Raj · Built with plain HTML, CSS &amp; JS</p>
+    <p class="foot-hint">Tip: press <kbd>Ctrl</kbd> + <kbd>K</kbd> to jump anywhere.</p>
+  </div>
+</footer>
+
+<!-- Command palette -->
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command palette" hidden>
+  <div class="palette-box">
+    <input id="paletteIn" type="text" placeholder="Jump to a section or run an action…" aria-label="Search commands" aria-controls="paletteList" aria-autocomplete="list" autocomplete="off">
+    <ul id="paletteList" role="listbox" aria-label="Commands"></ul>
+    <p class="palette-foot"><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>Enter</kbd> select · <kbd>Esc</kbd> close</p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
